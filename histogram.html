@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="histogram.css">
+    <title>Histogram Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-box">
+            <h3>Lower Bounds</h3>
+            <div class="grades-inputs">
+                <label for="max">Max</label>
+                <input type="text" id="max">
+                <!-- Repeat for each grade from A+ to F -->
+                <label for="a-plus">A+</label>
+                <input type="text" id="a-plus">
+                <!-- ... -->
+            </div>
+        </div>
+
+        <div class="right-box">
+            <div class="histogram-box">
+                <h3>Histogram</h3>
+                <div class="grades-bars">
+                    <div class="grade-bar">
+                        <label for="a-plus-bar">A+</label>
+                        <div id="a-plus-bar" class="bar"></div>
+                    </div>
+                    <!-- Repeat for each grade from A+ to F -->
+                </div>
+            </div>
+
+            <div class="new-grade-box">
+                <label for="new-grade">New Grade</label>
+                <input type="text" id="new-grade">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
